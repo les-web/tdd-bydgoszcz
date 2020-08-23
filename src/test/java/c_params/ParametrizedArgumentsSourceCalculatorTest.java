@@ -9,6 +9,7 @@ public class ParametrizedArgumentsSourceCalculatorTest {
 
 
     @ParameterizedTest
+    
     @ArgumentsSource(MyProviderForAddTest.class)
 
     public void test (Integer i, Integer j, Integer expected){
