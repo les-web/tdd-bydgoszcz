@@ -7,9 +7,9 @@ import org.junit.jupiter.params.provider.ArgumentsSource;
 
 public class ParametrizedArgumentsSourceCalculatorTest {
 
+// dodane wyświetlanie nazw
+    @ParameterizedTest(name = "[{index}]   {0} + {1} = {2}")
 
-    @ParameterizedTest
-    
     @ArgumentsSource(MyProviderForAddTest.class)
 
     public void test (Integer i, Integer j, Integer expected){
