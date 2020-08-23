@@ -14,6 +14,7 @@ public class Zoo {
     }
 
     public void addAnimal(Animal pet) {
+
         this.animals.add(pet);
     }
 
@@ -37,7 +38,7 @@ public class Zoo {
     public String generateNameWithPrefix(Animal animal) {
         int numberOfSpaces = random.nextInt(10);
         StringBuilder spaces = new StringBuilder();
-        for(int i = 0; i < numberOfSpaces; i++) {
+        for (int i = 0; i < numberOfSpaces; i++) {
             spaces.append(" ");
         }
         return "Zwierzątko " + spaces.toString() + " " + animal.getName();
