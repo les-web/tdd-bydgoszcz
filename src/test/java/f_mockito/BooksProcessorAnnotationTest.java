@@ -2,6 +2,7 @@ package f_mockito;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -17,7 +18,9 @@ public class BooksProcessorAnnotationTest {
 
     @Mock
     Database mockedDatabase;
-    
+    @InjectMocks
+    BooksProcessor booksProcessor;
+
     @Test
     public void getTotalPrice_whenExceptionThrownInFirstAndSecondAttempt_shouldCallMethodThirdTime() {
 
@@ -27,7 +30,8 @@ public class BooksProcessorAnnotationTest {
                 .thenThrow(new RuntimeException())
                 .thenThrow(new RuntimeException())
                 .thenReturn(list);
-        BooksProcessor booksProcessor = new BooksProcessor(mockedDatabase);
+        //     BooksProcessor booksProcessor = new BooksProcessor(mockedDatabase);
+        // usunięte bo korzystamy z InjectMocks
         double totalPrice = booksProcessor.getTotalPrice();
         verify(mockedDatabase, times(3)).getBooks();
     }
