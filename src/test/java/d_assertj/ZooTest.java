@@ -17,24 +17,40 @@ public class ZooTest {
     }
 
     @Test
-    public void whenAddingOneAnimal_thereShouldBeOneAnimalInTheZoo(){
+    public void whenAddingOneAnimal_thereShouldBeOneAnimalInTheZoo() {
         Zoo zoo = new Zoo();
         Animal animal = new Animal("Żyrafa");
         zoo.addAnimal(animal);
         List<Animal> allAnimals = zoo.getAllAnimals();
-      //  Assertions.assertThat(allAnimals).hasSize(1);
+        //  Assertions.assertThat(allAnimals).hasSize(1);
         Assertions.assertThat(allAnimals).containsExactly(animal);
 
     }
+
     // "Stefan" -> "Zwierzątko      Stefan"
     @Test
-    public void generateNameWithPrefix_thereShouldBePrefixAtTheBeginning(){
+    public void generateNameWithPrefix_thereShouldBePrefixAtTheBeginning() {
         Zoo zoo = new Zoo();
         Animal animal = new Animal("Zebra");
-        String generatedName  = zoo.generateNameWithPrefix(animal);
+        String generatedName = zoo.generateNameWithPrefix(animal);
         System.out.println(generatedName);
-        Assertions.assertThat(generatedName).startsWith("Zwierzątko")
-        .endsWith("Zebra");
+        Assertions.assertThat(generatedName)
+                .startsWith("Zwierzątko");
+        //              .endsWith("Zebra");
+    }
+
+    @Test
+
+    public void generatedNameWithPrefix_thereShouldBeNameOfTheAnimalAtTheEnd() {
+        Zoo zoo = new Zoo();
+        Animal animal = new Animal("Zebra");
+        String generatedName = zoo.generateNameWithPrefix(animal);
+        //     System.out.println(generatedName);
+        Assertions.assertThat(generatedName)
+                //        .startsWith("Zwierzątko");
+                //             .endsWith("Zebra");
+                .endsWith(animal.getName());
+
     }
 
 }
