@@ -1,5 +1,15 @@
 package g_tdd_solution;
+/*
+Utwórz klasę Queue (kolejka – FIFO).
+Wykorzystując technikę TDD zaimplementuj metody:
+void enqueue(Object o) – dodawanie elementu do kolejki
+Object peek() – zwracanie elementu z początku kolejki (bez usuwania go)
+Object dequeue() – zwracanie i usuwanie elementu z początku kolejki
+Kolejka powinna byd oparta o tablicę. Ma mied określoną maksymalną wielkośd.
+Jeśli próbujemy pobrad element a kolejka jest pusta -> wyjątek EmptyQueueException.
+Jeśli kolejka jest pełna to przy próbie dodania kolejnego elementu -> wyjątek FullQueueException.
 
+ */
 public class Queue {
 
     private Object[] elements;

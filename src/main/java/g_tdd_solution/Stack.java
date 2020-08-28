@@ -1,5 +1,15 @@
 package g_tdd_solution;
+/*
+Utwórz klasę Stack (stos – LIFO).
+Wykorzystując technikę TDD zaimplementuj metody:
+void push(Object o) – dodawanie elementu do kolejki
+Object peek() – zwracanie elementu ze stosu (bez usuwania go)
+Object pop() – zwracanie i usuwanie elementu ze stosu
+Stos powinien byd oparty o tablicę. Ma mied określoną maksymalną wielkośd (parameter konstruktora).
+Jeśli próbujemy pobrad element a stos jest pusty -> wyjątek EmptyStackException.
+Jeśli stos jest pełny to przy próbie dodania kolejnego elementu -> wyjątek FullStackException.
 
+ */
 public class Stack {
 
     private final Object[] elements;

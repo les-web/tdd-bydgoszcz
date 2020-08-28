@@ -1,5 +1,16 @@
 package g_tdd_solution;
-
+/*
+Utwórz klasę MarsRoverNavigator, która w konstruktorze będzie przyjmowad obiekt typu MarsRover.
+Wykorzystując technikę TDD zaimplementuj metodę:
+void navigate(String directions)
+1.Metoda przyjmuje kierunki, w których ma poruszad się łazik marsjaoski:
+ F – forward, B – backward, L – left, R – rigth
+ Kierunki podane są w formie jednego łaocucha znaków (np. ”F,F,L,R,B,B,B”).
+ Metoda powinna na podstawie podanych w ten sposób kierunków sterowad łazikiem (MarsRover).
+2.Dodaj możliwośd podawania liczby ruchów w danym kierunku (np. ”2|F,L,R,3|B” zamiast ”F,F,L,R,B,B,B”).
+3.Jeśli zostanie podany nieznany kierunek (inny niż F,B,L lub R)
+metoda powinna rzucid wyjątek typu IllegalArgumentException z informacją ”unrecognized direction”.
+ */
 public class MarsRoverNavigator {
 
     private final MarsRover marsRover;

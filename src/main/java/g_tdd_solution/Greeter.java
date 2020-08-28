@@ -1,5 +1,19 @@
 package g_tdd_solution;
+/*
+Utwórz klasę Greeter.
+Wykorzystując technikę TDD zaimplementuj metodę:
+String generateGreeting(String name)
+1.Metoda zwraca pozdrowienie w formie „Hello <imię>”.
+2.Metoda usuwa białe znaki z początku i kooca otrzymanego stringa przed wyświetleniem pozdrowienia.
+3.Metoda automatycznie zmienia pierwszą literę na wielką jeśli imię rozpoczyna się z małej litery.
 
+Utwórz nowy interfejs TimeProvider a metodą zwracającą aktualny czas.
+Zmodyfikuj klasę Greeter w taki sposób aby przyjmowała obiekt typu TimeProvider w konstruktorze.
+4.Metoda powinna zwracad pozdrowienie „Good morning <imię>” między 6:00 a 12:00.
+5.Metoda powinna zwracad pozdrowienie w formie „Good evening <imię>” między 18:00 a 22:00.
+6.Metoda powinna zwracad pozdrowienie w formie „Good night <imię>” między 22:00 a 6:00.
+
+ */
 import java.time.LocalTime;
 
 public class Greeter {

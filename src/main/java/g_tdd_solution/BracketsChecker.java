@@ -1,5 +1,15 @@
 package g_tdd_solution;
-
+/*
+Utwórz klasę BracketsChecker. Klasa powinna zawierad metodę:
+boolean check(String s)
+Metoda przyjmuje łaocuchy znaków złożonych z otwierających nawiasów kwadratowych ”*”
+i zamykających nawiasów kwadratowych ”+”.
+Powinna zwracad true jeśli przekazany łaocuch znaków zawiera pary otwierających i zamykających nawiasów
+ w odpowiedniej kolejności lub false w przeciwnym wypadku.
+Np.: ”*” – false, ”*+” – true, ”*+*+” – true, ”**++” – true, ”+*” – false, ”+*+*” – false, ”*+*++” – false
+Wskazówka: do rozwiązania może byd potrzebna pewna bardzo popularna struktura danych.
+Użyj parametryzowanych testów aby sprawdzid działanie metody.
+ */
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;

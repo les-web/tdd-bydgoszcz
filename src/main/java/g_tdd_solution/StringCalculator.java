@@ -1,5 +1,19 @@
 package g_tdd_solution;
-
+/*
+Utwórz klasę StringCalculator.
+Wykorzystując technikę TDD zaimplementuj metodę:
+int add(String numbers)
+Metoda powinna byd w stanie dodad dwie liczby oddzielone przecinkiem i zwrócid rezultat.
+1.Dla wartości null powinna rzucad wyjątek typu IllegalArgumentException z informacją”null not allowed”.
+2.Dla pustego łaocucha znaków (””) powinna zwracad 0.
+3.Dla pojedynczej liczby (”1”) powinna zwrócid tę liczbę.
+4.Dla dwóch liczb (”1,2”) powinna zwrócid ich sumę.
+5.Metoda powinna wspierad dowolną liczbę liczb.
+6.Metoda powinna wspierad również dwa inne separatory – średnik (;) oraz znak nowej linii (\n).
+7.Jeżeli do metody przekazane zostały liczby ujemne metoda powinna rzucid wyjątek IllegalArgumentException z wiadomością ”negatives not allowed: ” i listą owych ujemnych liczb, np. ”negatives not allowed: -1,-2”.
+8.Liczby większe niż 1000 powinny byd ignorowane (czyli 2 + 1001 = 2).
+9.Metoda powinna wspierad dowolny jednoznakowy separator podany w odpowiednim formacie, np. dla znaku #:
+ */
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.partitioningBy;
 
