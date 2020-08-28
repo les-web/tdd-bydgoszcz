@@ -25,7 +25,11 @@ public class FibonacciTest {
         int number = fibonacci.fibonacciNumber(3);
         assertThat(number).isEqualTo(2);
     }
-
+    @Test
+    public void for9_shouldReturn34() {
+        int number = fibonacci.fibonacciNumber(9);
+        assertThat(number).isEqualTo(34);
+    }
     @Test
     public void for0_shouldReturn0() {
         int number = fibonacci.fibonacciNumber(0);

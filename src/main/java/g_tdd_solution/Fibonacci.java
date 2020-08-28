@@ -3,6 +3,7 @@ package g_tdd_solution;
         Wykorzystując technikę TDD zaimplementuj metodę:
         int fibonacciNumber(int i)
         Metoda powinna zwracad i-tą liczbę z ciągu fibonacciego.
+        0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
 */
 public class Fibonacci {
     public int fibonacciNumber(int i) {
